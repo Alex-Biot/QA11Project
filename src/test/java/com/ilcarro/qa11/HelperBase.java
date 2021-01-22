@@ -17,7 +17,7 @@ public class HelperBase {
         return wd.findElements(locator).size() > 0;
     }
 
-    public boolean isElementPresent2(By by) {
+   /* public boolean isElementPresent2(By by) {
         try {
             wd.findElement(by);
             return true;
@@ -32,7 +32,7 @@ public class HelperBase {
             wd.findElement(locator).clear();
             wd.findElement(locator).sendKeys(text);
         }
-    }
+    }*/
 
     public void click(By locator) {
         wd.findElement(locator).click();
